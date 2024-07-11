@@ -1,10 +1,19 @@
 @Entity(name = "players")
 public class Player {
-    private Game game;
-    private List<Card> cards;
-    private Card current_objective; // schat die hij/zij moet zoeken
-    private Tile tile; // 1 tegel per speler
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
+
+
+    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    // één speler heeft meerdere kaarten
+    private List<Card> cards;
+    @OneToOne
+    private Card current_objective; // schat die hij/zij moet zoeken
+    @OneToOne
+    private Tile tile; // 1 tegel per speler
+
     private String name;
     private int positionX;
     private int positionY;

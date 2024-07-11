@@ -1,10 +1,20 @@
 @Entity(name = "tiles")
 public class Tile {
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
+
+    @OneToOne
     private Treasure treasure; // item (schat? ja/nee object)
-    private Bool left;
-    private Bool right;
-    private Bool top;
-    private Bool bottom;
+    private boolean left;
+
+    private boolean right;
+
+    private boolean top;
+
+    private boolean bottom;
+
+    @Enumerated(EnumType.STRING)
     private Path path;
 
     // Tile dicrection (tegel richting)
