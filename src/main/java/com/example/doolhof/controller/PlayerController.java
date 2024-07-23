@@ -23,4 +23,9 @@ public class PlayerController {
         Player player = playerService.getPlayer(player_Id).orElse(null);
         return ResponseEntity.ok(player);
     }
+
+    @GetMapping("/test")
+    public ResponseEntity<String> test() {
+        return ResponseEntity.ok("test");
+    }
 }

@@ -2,6 +2,7 @@ package com.example.doolhof.domeinen;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+
 import java.util.UUID;
 
 @Entity(name = "tiles")
@@ -13,12 +14,14 @@ public class Tile {
     @OneToOne
     private Treasure treasure; // item (schat? ja/nee object)
 
-    private int direction;
-
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "game_id", nullable = true)
-    Game game;
+    @JoinColumn(name = "game_id", nullable = false)
+    private Game game;
+
+    @ManyToOne
+    @JoinColumn(name = "board_id", nullable = false)
+    private Board board;
 
     private boolean isWallLeft;
 
@@ -35,29 +38,28 @@ public class Tile {
     private Path path;
 
 
+    public Tile() {
+    }
 
-    public Tile(){}
-
-    public Tile(Path path){
+    public Tile(Path path) {
         this.treasure = null;
         this.path = path;
-        direction = 0;
-        configureTileSides(path, direction); // default at initial
+        configureTileSides(path); // default at initial
     }
 
-    public Tile(Path path, Treasure treasure){
+
+    public Tile(Path path, Treasure treasure) {
         this.treasure = treasure;
         this.path = path;
-        direction = 0;
-        configureTileSides(path, direction);
+        configureTileSides(path);
     }
 
-    public Tile(Path path, Treasure treasure, int direction){
+    public Tile(Path path, Treasure treasure, int direction) {
         this.treasure = treasure;
         this.path = path;
-        this.direction = direction;
-        configureTileSides(path, direction);
+        configureTileSides(path);
     }
+
 
     public int getPositionX() {
         return positionX;
@@ -127,7 +129,7 @@ public class Tile {
     }
 
     // DEFAULT position of path / roads
-    private void configureTileSides(Path path, int direction) {
+    private void configureTileSides(Path path) {
         switch (path) {
             case STRAIGHT:
                 this.isWallLeft = false; // muur
@@ -150,13 +152,6 @@ public class Tile {
         }
     }
 
-    public int getDirection() {
-        return direction;
-    }
-
-    public void setDirection(int direction) {
-        this.direction = direction;
-    }
 
     public Treasure getTreasure() {
         return treasure;
@@ -168,5 +163,17 @@ public class Tile {
 
     public void setGame(Game game) {
         this.game = game;
+    }
+
+    public void setTreasure(Treasure treasure) {
+        this.treasure = treasure;
+    }
+
+    public Board getBoard() {
+        return board;
+    }
+
+    public void setBoard(Board board) {
+        this.board = board;
     }
 }

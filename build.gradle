@@ -25,23 +25,18 @@ dependencies {
 	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 	implementation 'org.springframework.boot:spring-boot-starter-json'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	runtimeOnly 'com.h2database:h2'
-	//implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
-	//implementation 'org.springframework.boot:spring-boot-starter-security'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	//implementation 'org.keycloak:keycloak-admin-client:23.0.3'
+	implementation  'com.h2database:h2'
 	implementation 'org.modelmapper:modelmapper:3.2.0'
-	implementation 'com.pusher:pusher-http-java:1.0.0'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.boot:spring-boot-testcontainers'
 	testImplementation 'org.springframework.amqp:spring-rabbit-test'
-	//testImplementation 'org.springframework.security:spring-security-test'
 	testImplementation 'org.testcontainers:junit-jupiter'
 	testImplementation 'org.testcontainers:rabbitmq'
 	testImplementation 'org.testcontainers:postgresql'
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()
