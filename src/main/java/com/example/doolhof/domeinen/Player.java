@@ -34,6 +34,9 @@ public class Player {
     private String name;
 
     @Column(nullable = true)
+    private boolean isLoggedIn;
+
+    @Column(nullable = true)
     private int positionX;
 
     @Column(nullable = true)
