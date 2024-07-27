@@ -34,7 +34,7 @@ public class GameController {
     public ResponseEntity<Game> createGame(@PathVariable UUID player_id){
         Game game = gameService.createGame(player_id);
 
-        return null;
+        return ResponseEntity.ok(game);
     }
 
     @DeleteMapping("/{game_id}")

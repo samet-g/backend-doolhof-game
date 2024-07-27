@@ -3,6 +3,7 @@ package com.example.doolhof.domeinen;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.util.Set;
 import java.util.UUID;
 
 @Entity(name = "tiles")
@@ -14,14 +15,17 @@ public class Tile {
     @OneToOne
     private Treasure treasure; // item (schat? ja/nee object)
 
+    //@JsonIgnore
+    //@ManyToOne
+    //@JoinColumn(name = "game_id")
+    //private Game game;
     @JsonIgnore
-    @ManyToOne
-    @JoinColumn(name = "game_id")
-    private Game game;
+    @ManyToMany(mappedBy = "tiles")
+    private Set<Game> games;
 
-    @ManyToOne
-    @JoinColumn(name = "board_id")
-    private Board board;
+    //@ManyToOne
+    //@JoinColumn(name = "board_id")
+    //private Board board;
 
 
     @Column(name = "is_wall_left")
@@ -165,6 +169,15 @@ public class Tile {
         return treasure;
     }
 
+    public Set<Game> getGames() {
+        return games;
+    }
+
+    public void setGames(Set<Game> games) {
+        this.games = games;
+    }
+
+    /*
     public Game getGame() {
         return game;
     }
@@ -177,6 +190,9 @@ public class Tile {
         this.treasure = treasure;
     }
 
+     */
+
+    /*
     public Board getBoard() {
         return board;
     }
@@ -184,4 +200,6 @@ public class Tile {
     public void setBoard(Board board) {
         this.board = board;
     }
+
+     */
 }

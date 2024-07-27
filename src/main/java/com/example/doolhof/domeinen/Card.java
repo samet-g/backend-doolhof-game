@@ -4,6 +4,7 @@ package com.example.doolhof.domeinen;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
+import java.util.Set;
 import java.util.UUID;
 
 @Entity(name = "cards")
@@ -12,10 +13,14 @@ public class Card {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
+    // @JsonIgnore
+    // @ManyToOne
+    // @JoinColumn(name = "game_id")
+    // private Game game;
+
     @JsonIgnore
-    @ManyToOne
-    @JoinColumn(name = "game_id")
-    private Game game;
+    @ManyToMany(mappedBy = "cards")
+    private Set<Game> games;
 
     @ManyToOne
     @JoinColumn(name = "player_id")
@@ -35,6 +40,15 @@ public class Card {
         this.treasure = treasure;
     }
 
+    public Set<Game> getGames() {
+        return games;
+    }
+
+    public void setGames(Set<Game> games) {
+        this.games = games;
+    }
+
+    /*
     public Game getGame() {
         return game;
     }
@@ -42,4 +56,8 @@ public class Card {
     public void setGame(Game game) {
         this.game = game;
     }
+
+     */
+
+
 }

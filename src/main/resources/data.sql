@@ -88,6 +88,32 @@ INSERT INTO cards (id, treasure_id) VALUES ('9b0692e1-477d-46f2-a44d-3a9b4b7b1d7
 INSERT INTO cards (id, treasure_id) VALUES ('4685b2d3-4a8a-4d2c-9f78-1e5a77b4fcf6', 'd5a7b8b0-6b5f-11ec-90d6-0242ac120025'); -- Koe
 INSERT INTO cards (id, treasure_id) VALUES ('3d98a4f1-4c62-4d58-94f7-cf85acb1345c', 'd5a7b8b0-6b5f-11ec-90d6-0242ac120026'); -- Kip
 
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'e8a1a2c6-1b6e-4b70-b5b8-d0987ec5b9d4'); -- Bezem
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'dc383a68-7e09-4dc6-96ec-f79d5c673b4d'); -- Zak Goud
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '0f71a85b-e042-4c2a-9a9a-bd9f9c1e6cf5'); -- Schip
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'b9e3bfa6-365c-4a79-905a-e029eb22f3d7'); -- Sleutel
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '4a3f8e09-d4bc-4e80-9a12-ff827fa6260b'); -- Kroon
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'fa7f234c-41f6-4c99-8970-e3783fc79a42'); -- Drankje
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'd98d1b70-2b0e-4c27-9f68-3b763ac9f9d6'); -- Geest
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '7fbd15d7-dbd9-4340-b57a-bb6dc74d5b6f'); -- Schijf (Amulet)
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'a04d83d1-705f-48ff-9fc4-b91e6db0b23d'); -- Ring
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'f3e826c7-409a-48ed-b68c-973cc71a20f4'); -- Buidel
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '2a78cc3d-1f51-4423-9b40-23e0a5d515c6'); -- Kaars
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '9d6d8c68-82b2-4d65-9d29-9143d38d7493'); -- Helm
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'eeaeb5d0-7a41-4a61-b3f4-f3c5b0c8305b'); -- Zwaard
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'c7313f3c-6e43-4c0c-8b72-829e821ae8e0'); -- Schatkist
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '46b59e66-4288-43dc-931c-3a5b72f9f5c8'); -- Uil
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'cd27a6b5-8b5d-45ea-8149-09e1e7323c3d'); -- Spin
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'b9e98c4f-c3a2-4094-8962-0a897cf760d1'); -- Vleermuis
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'c1b2d786-6220-4db6-a2a7-061f4b74dbd8'); -- Rat
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '7c71b9f5-44cb-4b62-8ff1-bc4c39c83c0a'); -- Kabouter
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '49e5d5b0-1f0d-4d80-a912-d7ecb8cbca8e'); -- Boek
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', 'c6e477f4-f11e-43d3-b34c-4de7c76b7806'); -- Ketting
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '9b0692e1-477d-46f2-a44d-3a9b4b7b1d7d'); -- Vogel
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '4685b2d3-4a8a-4d2c-9f78-1e5a77b4fcf6'); -- Koe
+INSERT INTO game_cards (game_id, card_id) VALUES ('f7c9b2f6-6b5f-11ec-90d6-0242ac120003', '3d98a4f1-4c62-4d58-94f7-cf85acb1345c'); -- Kip
+
+
 -- Invoegen van 20 CORNER tegels
 INSERT INTO tiles (id, path, is_wall_left, is_wall_l_right, is_wall_l_top, is_wall_l_bottom, position_x, position_y, game_id, treasure_id)
 VALUES ('3f2e8f48-3b77-4394-8f4f-8b09b6f23fd5', 'CORNER', true, false, true, false, 0, 0, NULL, NULL),

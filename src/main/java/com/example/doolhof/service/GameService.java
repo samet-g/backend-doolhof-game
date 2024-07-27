@@ -1,28 +1,29 @@
 package com.example.doolhof.service;
 
-import com.example.doolhof.domeinen.Game;
-import com.example.doolhof.domeinen.GameState;
-import com.example.doolhof.domeinen.Player;
+import com.example.doolhof.domeinen.*;
 import com.example.doolhof.exception.NotFoundException;
+import com.example.doolhof.repository.CardRepository;
 import com.example.doolhof.repository.GameRepository;
 import com.example.doolhof.repository.PlayerRepository;
+import com.example.doolhof.repository.TileRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 @Transactional
 public class GameService {
     private final GameRepository gameRepository;
     private final PlayerRepository playerRepository;
+    private final CardRepository cardRepository;
+    private final TileRepository tileRepository;
 
-    public GameService(GameRepository gameRepository, PlayerRepository playerRepository) {
+    public GameService(GameRepository gameRepository, PlayerRepository playerRepository, CardRepository cardRepository, TileRepository tileRepository) {
         this.gameRepository = gameRepository;
         this.playerRepository = playerRepository;
+        this.cardRepository = cardRepository;
+        this.tileRepository = tileRepository;
     }
 
     public Optional<Game> getGame(UUID gameId) {
@@ -37,9 +38,23 @@ public class GameService {
         if (currentPlayer.isEmpty()) {
             throw new NotFoundException("Player does not exist");
         }
+
+        List<Tile> tilelist = tileRepository.findAll();
+        Set<Tile> tiles = new HashSet<>(tilelist);
+
+        game.setTiles(tiles);
+
+
         List<Player> players = new ArrayList<>();
         players.add(currentPlayer.get());
         game.setPlayers(players);
+        List<Card> cardList = cardRepository.findAll();
+        Set<Card> cards = new HashSet<>(cardList);
+
+        game.setCards(cards);
+
+        game = gameRepository.save(game);
+
         return game;
     }
 
