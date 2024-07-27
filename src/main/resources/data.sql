@@ -1,10 +1,10 @@
 
 
 -- Insert into Board
-INSERT INTO boards (id)
-VALUES ('b3b8f4e8-6b5f-11ec-90d6-0242ac120003');
-INSERT INTO boards (id)
-VALUES ('a1b2c3d4-6b5f-11ec-90d6-0242ac120004');
+--INSERT INTO boards (id)
+--VALUES ('b3b8f4e8-6b5f-11ec-90d6-0242ac120003');
+--INSERT INTO boards (id)
+--VALUES ('a1b2c3d4-6b5f-11ec-90d6-0242ac120004');
 
 
 -- Insert into Game
@@ -101,37 +101,37 @@ VALUES ('3f2e8f48-3b77-4394-8f4f-8b09b6f23fd5', 'CORNER', true, false, true, fal
        ('5cb9ad2c-4c1e-4c8d-b9ff-c8cbf4ad8a5b', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120018'),
        ('ce258f56-e1c2-4f7a-9f99-8d23fa63ae5e', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120019'),
        ('31e64390-1d92-4d61-871d-2867a2c0972e', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120020'),
-       ('4f0ab6d5-2797-45e0-92d0-9fc18e1b1cfc', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('e84df0b4-6c73-4b1d-9f76-cd83c45353cf', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('6d9f86bb-4a8d-4e93-b6e7-593e563a54fc', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('b2b6454a-7b04-4d59-a3c4-5a5b4096d7a4', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('8e3fc823-00e3-4031-8a06-7f21db417f5f', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('db1d2ebc-2b65-4643-8a1a-d7480c6a8c6e', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('5ed2e835-708a-411b-8d94-85f19fa3fd2d', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('74e58c0d-65e7-4b6b-bef6-9bff6aeb7ac8', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('394d5e2f-4d02-4d41-92ef-9b24660b88e0', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('cead7b46-89f4-4cb8-83c5-89b10ae1c25d', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('32a0c620-4f60-4b36-9f88-15b5c66b2db8', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('5fb9c720-84f4-4f9e-b6a2-b5bff8f4c5e8', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('b42d9ff2-02e8-4f54-9084-e99ef18e1e8b', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL),
-       ('64d64ae2-1fd4-48f5-9cfd-9a2fa6ddbbcf', 'CORNER', true, false, true, false, NULL, NULL, NULL, NULL, NULL);
+       ('4f0ab6d5-2797-45e0-92d0-9fc18e1b1cfc', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('e84df0b4-6c73-4b1d-9f76-cd83c45353cf', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('6d9f86bb-4a8d-4e93-b6e7-593e563a54fc', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('b2b6454a-7b04-4d59-a3c4-5a5b4096d7a4', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('8e3fc823-00e3-4031-8a06-7f21db417f5f', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('db1d2ebc-2b65-4643-8a1a-d7480c6a8c6e', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('5ed2e835-708a-411b-8d94-85f19fa3fd2d', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('74e58c0d-65e7-4b6b-bef6-9bff6aeb7ac8', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('394d5e2f-4d02-4d41-92ef-9b24660b88e0', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('cead7b46-89f4-4cb8-83c5-89b10ae1c25d', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('32a0c620-4f60-4b36-9f88-15b5c66b2db8', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('5fb9c720-84f4-4f9e-b6a2-b5bff8f4c5e8', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('b42d9ff2-02e8-4f54-9084-e99ef18e1e8b', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL),
+       ('64d64ae2-1fd4-48f5-9cfd-9a2fa6ddbbcf', 'CORNER', true, false, true, false, -0, -0, NULL, NULL, NULL);
 
 -- Invoegen van 12 STRAIGHT tegels
 INSERT INTO tiles (id, path, is_wall_left, is_wall_l_right, is_wall_l_top, is_wall_l_bottom, position_x, position_y,
                    board_id, game_id, treasure_id)
 VALUES
-    ('09cf3a3e-b79e-439d-8481-760dbfc2c3a8', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('a79860b7-1d05-44b7-8b24-469ac3e26062', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('2c236d9c-fd1e-4b30-8d3d-66064d4d87d6', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('edc1c3c1-f683-4e68-863c-48b5b29bb569', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('d4d7a924-e9e8-4c72-9119-5d438c02e3a8', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('b06959b0-36c2-4de7-85c4-845a3dcb075a', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('6c0a53a0-bd5d-4c5d-94e8-559e4684a94a', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('48c8de54-2a4b-4f38-8518-70d5e52d7f9b', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('e739e720-94e4-4b44-875d-3a00cb0a0713', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('25e4a4c6-e03f-4fc7-b823-f92f7a11b4e4', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('a4a73b41-bb14-4b2e-9f37-44b6a34f405e', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL),
-    ('2b91b059-2f9d-43e4-9b39-2623d9a007d6', 'STRAIGHT', false, false, true, true, NULL, NULL, NULL, NULL, NULL);
+    ('09cf3a3e-b79e-439d-8481-760dbfc2c3a8', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('a79860b7-1d05-44b7-8b24-469ac3e26062', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('2c236d9c-fd1e-4b30-8d3d-66064d4d87d6', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('edc1c3c1-f683-4e68-863c-48b5b29bb569', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('d4d7a924-e9e8-4c72-9119-5d438c02e3a8', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('b06959b0-36c2-4de7-85c4-845a3dcb075a', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('6c0a53a0-bd5d-4c5d-94e8-559e4684a94a', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('48c8de54-2a4b-4f38-8518-70d5e52d7f9b', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('e739e720-94e4-4b44-875d-3a00cb0a0713', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('25e4a4c6-e03f-4fc7-b823-f92f7a11b4e4', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('a4a73b41-bb14-4b2e-9f37-44b6a34f405e', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL),
+    ('2b91b059-2f9d-43e4-9b39-2623d9a007d6', 'STRAIGHT', false, false, true, true, -0, -0, NULL, NULL, NULL);
 
 -- Invoegen van 18 CROSSPOINT tegels
 INSERT INTO tiles (id, path, is_wall_left, is_wall_l_right, is_wall_l_top, is_wall_l_bottom, position_x, position_y,
@@ -149,12 +149,12 @@ VALUES
     ('0b2374a3-72b2-4b92-bd60-2d912d3fa1d1', 'CROSSPOINT', false, false, false, true, 2, 6, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120012'),
     ('6fc1e4d2-1786-485b-bcf0-36a8f17ae6d7', 'CROSSPOINT', false, false, false, true, 4, 6, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120013'),
     ('c6343482-dc4e-46f5-aaa8-d01534c25a0f', 'CROSSPOINT', true, false, false, false, 0, 4, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120014'),
-    ('cc3967f4-d8b8-42dc-b78d-c1a91fc0ff5e', 'CROSSPOINT', true, false, true, true, NULL, NULL, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120021'),
-    ('bfc379f6-cf8f-4580-b2c5-56008418e93f', 'CROSSPOINT', true, false, true, true, NULL, NULL, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120022'),
-    ('5855df69-3dc6-4ea1-8a76-4d6c4fcb0879', 'CROSSPOINT', true, false, true, true, NULL, NULL, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120023'),
-    ('ef28e0ab-b11f-4fc0-91e1-f68243774a1d', 'CROSSPOINT', true, false, true, true, NULL, NULL, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120024'),
-    ('b8d5692e-6e83-42e7-a6ff-8ed8e57ab015', 'CROSSPOINT', true, false, true, true, NULL, NULL, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120025'),
-    ('a34e0026-6b0e-43c4-999c-1e1d7466c2eb', 'CROSSPOINT', true, false, true, true, NULL, NULL, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120026');
+    ('cc3967f4-d8b8-42dc-b78d-c1a91fc0ff5e', 'CROSSPOINT', true, false, true, true, -0, -0, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120021'),
+    ('bfc379f6-cf8f-4580-b2c5-56008418e93f', 'CROSSPOINT', true, false, true, true, -0, -0, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120022'),
+    ('5855df69-3dc6-4ea1-8a76-4d6c4fcb0879', 'CROSSPOINT', true, false, true, true, -0, -0, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120023'),
+    ('ef28e0ab-b11f-4fc0-91e1-f68243774a1d', 'CROSSPOINT', true, false, true, true, -0, -0, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120024'),
+    ('b8d5692e-6e83-42e7-a6ff-8ed8e57ab015', 'CROSSPOINT', true, false, true, true, -0, -0, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120025'),
+    ('a34e0026-6b0e-43c4-999c-1e1d7466c2eb', 'CROSSPOINT', true, false, true, true, -0, -0, NULL, NULL, 'd5a7b8b0-6b5f-11ec-90d6-0242ac120026');
 
 
 
@@ -163,6 +163,6 @@ INSERT INTO players (id, name, is_logged_in, position_x, position_y, game_id, ti
 VALUES ('e6e1c1b8-6b5f-11ec-90d6-0242ac120003', 'Player 1', TRUE, 1, 1, 'f7c9b2f6-6b5f-11ec-90d6-0242ac120003',
         NULL, NULL);
 INSERT INTO players (id, name, is_logged_in, position_x, position_y, game_id, tile_id, current_objective_id)
-VALUES ('f8f9a0b1-6b5f-11ec-90d6-0242ac120004', 'Player 2', FALSE, 2, 2, 'f7c9b2f6-6b5f-11ec-90d6-0242ac120003',
-        'a34e0026-6b0e-43c4-999c-1e1d7466c2eb', NULL);
+VALUES ('f8f9a0b1-6b5f-11ec-90d6-0242ac120004', 'Player 2', TRUE, -0, -0, NULL,
+        NULL, NULL);
 
