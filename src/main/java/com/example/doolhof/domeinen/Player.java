@@ -1,7 +1,6 @@
 package com.example.doolhof.domeinen;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -27,19 +26,19 @@ public class Player {
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "game_id", nullable = true)
+    @JoinColumn(name = "game_id")
     private Game game;
 
 
     private String name;
 
-    @Column(nullable = true)
+    @Column()
     private boolean isLoggedIn;
 
-    @Column(nullable = true)
+    @Column(name = "POSITION_X")
     private int positionX;
 
-    @Column(nullable = true)
+    @Column(name = "POSITION_Y")
     private int positionY;
     // current card  )-> schat die we zoeken
 

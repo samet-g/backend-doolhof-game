@@ -16,22 +16,30 @@ public class Tile {
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "game_id", nullable = false)
+    @JoinColumn(name = "game_id")
     private Game game;
 
     @ManyToOne
-    @JoinColumn(name = "board_id", nullable = false)
+    @JoinColumn(name = "board_id")
     private Board board;
 
+
+    @Column(name = "is_wall_left")
     private boolean isWallLeft;
 
+    @Column(name = "is_wall_l_right")
     private boolean isWallLRight;
 
+    @Column(name = "is_wall_l_top")
     private boolean isWallLTop;
 
+    @Column(name = "is_wall_l_bottom")
     private boolean isWallLBottom;
 
+    @Column(name = "POSITION_X")
     private int positionX;
+
+    @Column(name = "POSITION_Y")
     private int positionY;
 
     @Enumerated(EnumType.STRING)

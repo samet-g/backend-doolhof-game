@@ -14,11 +14,11 @@ public class Card {
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "game_id", nullable = true)
+    @JoinColumn(name = "game_id")
     private Game game;
 
     @ManyToOne
-    @JoinColumn(name = "player_id", nullable = true)
+    @JoinColumn(name = "player_id")
     private Player player;
 
     @OneToOne
