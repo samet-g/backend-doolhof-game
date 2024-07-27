@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 import java.util.List;
 import java.util.UUID;
 
+/*
 @Entity(name = "boards")
 public class Board {
     @Id
@@ -32,3 +33,5 @@ public class Board {
         this.id = id;
     }
 }
+
+ */
